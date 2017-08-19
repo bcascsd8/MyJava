@@ -1,6 +1,7 @@
 package com.bcas.thread;
 
 class TestSleepMethod1 extends Thread {
+	System.out.println("Intiate Thread");
 	public void run() {
 		for (int i = 1; i < 10; i++) {
 			try {
@@ -30,6 +31,8 @@ class TestSleepMethod1 extends Thread {
 		t2.setName("BCAS");
 		System.out.println("Good Nignt");
 
+		System.out.println("This line for github test");
+		
 		System.out.println("Thread Id t1 : " + t1.getName());
 		System.out.println("Thread Id t2 : " + t2.getName());
 		System.out.println("Priority of t1 : " + t1.getPriority());
